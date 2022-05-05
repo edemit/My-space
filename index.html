@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet ride</title>
+    <link rel="shortcut icon" href="img/Planet (logo).svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img src="img/Planet (logo).svg" alt="" class="header__img">
+                    <h1 class="header__title">My Space</h1>
+                </div>
+                <div class="menu-button"></div>
+                <ul class="header__navbar">
+                    <li class="header__navbar-link"><a href="">Про нас</a></li>
+                    <li class="header__navbar-link"><a href="">Новини</a></li>
+                    <li class="header__navbar-link"><a href="">Блог</a></li>
+                    <li class="header__navbar-link"><a href=""><img src="img/icons/Icon.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="form">
+        <div class="container">
+            <div class="form__wrapper">
+                <img src="img/Uran.svg" alt="" class="form__planet" id="planet-img">
+                <div class="form__menu">
+                    <div class="menu__wrapper">
+                        <h1 class="form__title">Електронна черга для польоту у космос</h1>
+                        <form action="" class="block__form">
+                            <div class="form__block">
+                                <p class="block__title">Ім'я</p>
+                                <input type="text" class="block__input" placeholder="Введіть ім'я" id="formOne">
+                            </div>
+                            <div class="form__block">
+                                <p class="block__title">Телефон</p>
+                                <input type="tel" maxlength="13" class="block__input" placeholder="+38(   ) ___ __ __" id="formTwo">
+                            </div>
+                            <div class="form__block">
+                                <p class="block__title">Планета</p>
+                                <select name="planetList" class="block__input" id="select">
+                                    <option value="venus">Венера</option>
+                                    <option value="earth">Земля</option>
+                                    <option value="mars">Марс</option>
+                                    <option value="mercury">Меркурій</option>
+                                    <option value="neptune">Нептун</option>
+                                    <option value="uranus" selected >Уран</option>
+                                </select>
+                            </div>
+                            <a href="success.html"><button class="form-submit-button" type="submit" id="formButton" disabled>Зареєструватися</button></a>
+                        </form>
+                    </div>  
+                </div>
+            </img>
+        </div>
+    </section>
+    <footer>
+        <p>© 2022 My space. Всі права захищені.і</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
