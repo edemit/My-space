@@ -1,0 +1,35 @@
+{
+  "planets": [
+    {
+      "id":0,
+      "title":"Венера",
+      "value": "venus"
+    },
+    {
+      "id":1,
+      "title":"Земля",
+      "value": "earth"
+    },
+    {
+      "id":2,
+      "title":"Марс",
+      "value": "mars"
+    },
+    {
+      "id":3,
+      "title":"Меркурій",
+      "value": "mercury"
+    },
+    {
+      "id":4,
+      "title":"Нептун",
+      "value": "neptune"
+    },
+    {
+      "id":5,
+      "title":"Уран",
+      "value": "uranus"
+    }
+
+  ]
+}

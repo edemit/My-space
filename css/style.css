@@ -135,6 +135,7 @@ header {
 
 .form-submit-button a {
   color: #ffffff;
+  pointer-events: none;
 } 
 
 @media (max-width:1040px){

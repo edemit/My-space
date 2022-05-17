@@ -44,9 +44,32 @@ function buttonGlow(){
         console.log('It works!')
         document.getElementById("formButton").removeAttribute("disabled");
         document.getElementById("formButton").style.backgroundColor = "#30C598";
+        document.getElementById("formButtonLink").style.pointerEvents = "unset"
     }
     if(formListenerOne == 0 || formListenerTwo == 0) {
         document.getElementById("formButton").setAttribute("disabled", "disabled");
         document.getElementById("formButton").style.backgroundColor = "#AEDBCE";
+        document.getElementById("formButtonLink").style.pointerEvents = "none"
     }
+}
+
+fetch('http://localhost:3000/planets')
+    .then((response) => response.json())
+    .then((json) => {
+        newOptions = json;
+        newOptions.forEach(option => {
+           return createNewOption(option.value, option.title)
+        })
+    });
+
+
+function createNewOption(value,title) {
+    let createdOption = document.createElement("option");
+    createdOption.innerText = title;
+    createdOption.value = value;
+    appendOption(createdOption);
+}
+
+function appendOption(option) {
+    selectEl.append(option);
 }
